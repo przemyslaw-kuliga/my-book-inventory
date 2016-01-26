@@ -4,9 +4,7 @@ module.exports = { region: 'eu',
   config_vars: {test: 'new config'},
   addons: {},
   collaborators: 
-   [ 'przemyslaw.kuliga@schibsted.pl',
-     'lukasz.adamczuk@schibsted.pl',
-     'woj.niemiec@gmail.com' ],
+   [ 'przemyslaw.kuliga@schibsted.pl' ],
   features: 
    { 'runtime-dyno-metadata': { enabled: false },
      'log-runtime-metrics': { enabled: false },
@@ -16,4 +14,3 @@ module.exports = { region: 'eu',
      'http-end-to-end-continue': { enabled: false } },
   formation: [ { process: 'web', quantity: 1, size: 'Free' } ],
   log_drains: []};
-  
