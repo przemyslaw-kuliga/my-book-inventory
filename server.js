@@ -9,3 +9,5 @@ var app = require('./app')(require('./stock-repository')({
 app.listen(PORT, function () {
     console.log('Express server is listening on port ' + PORT);
 });
+
+//TODO call node infostracture/test.js by npm

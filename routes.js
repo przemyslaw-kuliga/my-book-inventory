@@ -13,7 +13,15 @@ module.exports = function (stockRepository) {
 
             stockRepository.getCount(isbn).then(function (result) {
                 if (result !== null) {
-                    return res.json(result);
+                    //return res.json(result);
+                    return res.format({
+                        'text/html': function () {
+                            res.send('<div>' + result + '</div>');
+                        },
+                        'application/json': function () {
+                            res.send(result);
+                        }
+                    });
                 }
 
                 var err = new Error('not found');
