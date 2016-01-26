@@ -15,12 +15,12 @@
   "dependencies": {
     "body-parser": "1.14.2",
     "express": "4.13.4",
+    "lodash": "4.0.0",
     "mongodb": "2.1.4"
   },
   "devDependencies": {
     "heroin-js": "^1.5.0",
     "jshint": "2.9.1",
-    "lodash": "4.0.0",
     "mocha": "2.3.4",
     "nodemon": "^1.8.1",
     "supertest": "1.1.0"
