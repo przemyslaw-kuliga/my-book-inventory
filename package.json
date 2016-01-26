@@ -1,0 +1,27 @@
+{
+  "name": "book_inventory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha",
+    "test:xunit": "npm run test -- --reporter xunit",
+    "lint": "jshint --exclude=node_modules/** **.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.14.2",
+    "express": "4.13.4",
+    "mongodb": "2.1.4"
+  },
+  "devDependencies": {
+    "jshint": "2.9.1",
+    "lodash": "4.0.0",
+    "mocha": "2.3.4",
+    "nodemon": "^1.8.1",
+    "supertest": "1.1.0"
+  }
+}
